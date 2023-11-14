@@ -17,6 +17,14 @@
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE":"Release"
             }
+        },
+        {
+            "name": "windows-debug",
+            "inherits": ["debug"],
+            "cacheVariables": {
+                "CMAKE_C_COMPILER": "x86_64-w64-mingw32-gcc",
+                "CMAKE_CXX_COMPILER": "x86_64-w64-mingw32-g++"
+            }
         }
     ],
     "buildPresets": [
